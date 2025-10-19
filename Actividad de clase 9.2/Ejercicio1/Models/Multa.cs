@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace Ejercicio1.Models
 {
+    [Serializable]
     internal class Multa:IComparable,IExportable
     {
         string patente;

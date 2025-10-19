@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,7 +17,7 @@ namespace Ejercicio1
     public partial class Form1 : Form
     {
         //List<Multa> multas;
-        List<IExportable>multas  = new List<IExportable>();
+        List<IExportable> multas;
 
         public Form1()
         {
@@ -165,6 +166,50 @@ namespace Ejercicio1
                 }
             }
             btnActualizar.PerformClick();
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            FileStream fs = null;
+            try
+            {
+                fs = new FileStream("multas.dat", FileMode.Create);
+                BinaryFormatter bf = new BinaryFormatter();
+                bf.Serialize(fs, multas);
+
+            }catch(Exception ex) { MessageBox.Show(ex.Message); }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            FileStream fs = null;
+            try
+            {
+                if (File.Exists("multas.dat"))
+                {
+                    fs = new FileStream("multas.dat", FileMode.Open);
+                    
+                    BinaryFormatter bf = new BinaryFormatter();
+                    multas = (List<IExportable>)bf.Deserialize(fs);
+                    
+
+                    btnActualizar.PerformClick(); // Actualiza el ListBox con los datos recuperados
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar datos: " + ex.Message);
+                multas = new List<IExportable>(); // Inicializa si falla
+            }
+            finally
+            {
+                if (fs != null) fs.Close();
+            }
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

@@ -44,6 +44,7 @@
             this.btnActualizar = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -59,9 +60,9 @@
             this.groupBox1.Controls.Add(this.tbPatente);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Location = new System.Drawing.Point(29, 23);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(542, 205);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -70,7 +71,7 @@
             // btnConfirmar
             // 
             this.btnConfirmar.Location = new System.Drawing.Point(421, 43);
-            this.btnConfirmar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnConfirmar.Margin = new System.Windows.Forms.Padding(2);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(102, 38);
             this.btnConfirmar.TabIndex = 9;
@@ -81,7 +82,7 @@
             // tbImporte
             // 
             this.tbImporte.Location = new System.Drawing.Point(142, 122);
-            this.tbImporte.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbImporte.Margin = new System.Windows.Forms.Padding(2);
             this.tbImporte.Name = "tbImporte";
             this.tbImporte.Size = new System.Drawing.Size(76, 20);
             this.tbImporte.TabIndex = 8;
@@ -91,7 +92,7 @@
             this.dtpVencimiento.CustomFormat = "dd/MM/yyyy";
             this.dtpVencimiento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpVencimiento.Location = new System.Drawing.Point(142, 77);
-            this.dtpVencimiento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpVencimiento.Margin = new System.Windows.Forms.Padding(2);
             this.dtpVencimiento.Name = "dtpVencimiento";
             this.dtpVencimiento.Size = new System.Drawing.Size(112, 20);
             this.dtpVencimiento.TabIndex = 7;
@@ -129,7 +130,7 @@
             // tbPatente
             // 
             this.tbPatente.Location = new System.Drawing.Point(142, 41);
-            this.tbPatente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbPatente.Margin = new System.Windows.Forms.Padding(2);
             this.tbPatente.Name = "tbPatente";
             this.tbPatente.Size = new System.Drawing.Size(112, 20);
             this.tbPatente.TabIndex = 1;
@@ -137,7 +138,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(134, 210);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(76, 20);
             this.textBox1.TabIndex = 0;
@@ -149,9 +150,9 @@
             this.groupBox2.Controls.Add(this.btnImportar);
             this.groupBox2.Controls.Add(this.btnActualizar);
             this.groupBox2.Location = new System.Drawing.Point(31, 247);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(541, 204);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
@@ -161,7 +162,7 @@
             // 
             this.lsbVer.FormattingEnabled = true;
             this.lsbVer.Location = new System.Drawing.Point(14, 30);
-            this.lsbVer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lsbVer.Margin = new System.Windows.Forms.Padding(2);
             this.lsbVer.Name = "lsbVer";
             this.lsbVer.Size = new System.Drawing.Size(378, 147);
             this.lsbVer.TabIndex = 13;
@@ -170,7 +171,7 @@
             // btnExportar
             // 
             this.btnExportar.Location = new System.Drawing.Point(421, 147);
-            this.btnExportar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExportar.Margin = new System.Windows.Forms.Padding(2);
             this.btnExportar.Name = "btnExportar";
             this.btnExportar.Size = new System.Drawing.Size(102, 38);
             this.btnExportar.TabIndex = 12;
@@ -180,7 +181,7 @@
             // btnImportar
             // 
             this.btnImportar.Location = new System.Drawing.Point(421, 89);
-            this.btnImportar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnImportar.Margin = new System.Windows.Forms.Padding(2);
             this.btnImportar.Name = "btnImportar";
             this.btnImportar.Size = new System.Drawing.Size(102, 38);
             this.btnImportar.TabIndex = 11;
@@ -191,7 +192,7 @@
             // btnActualizar
             // 
             this.btnActualizar.Location = new System.Drawing.Point(421, 30);
-            this.btnActualizar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnActualizar.Margin = new System.Windows.Forms.Padding(2);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(102, 38);
             this.btnActualizar.TabIndex = 10;
@@ -203,16 +204,30 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(450, 482);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(102, 38);
+            this.btnSalir.TabIndex = 14;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(604, 461);
+            this.ClientSize = new System.Drawing.Size(611, 544);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -238,6 +253,7 @@
         private System.Windows.Forms.ListBox lsbVer;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.Button btnSalir;
     }
 }
 
